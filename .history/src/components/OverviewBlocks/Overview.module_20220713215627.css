@@ -1,0 +1,8 @@
+.container {
+    overflow-y: auto;
+    border-radius: 1.5625rem;
+    width: 45%;
+    padding: 25px;
+    margin: 25px;
+    background: red;
+}

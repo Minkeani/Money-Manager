@@ -1,0 +1,17 @@
+.error {
+    display: flex;
+    margin: auto;
+    color: var(--color-yellow);
+    text-align: center;
+    align-items: center;
+    font-size: 250px;
+    text-shadow: var(--text-shadow-yellow);
+    justify-content: center
+}
+
+.text {
+    margin-top: var(--spacing-large);
+    font-size: var(--font-size-subheader);
+    color: var(--color-yellow);
+    text-align: center;
+}

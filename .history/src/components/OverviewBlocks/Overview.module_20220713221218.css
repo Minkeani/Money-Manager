@@ -1,0 +1,18 @@
+.container {
+    overflow-y: auto;
+    border-radius: 1.5625rem;
+    width: 35%;
+    padding: 25px;
+    margin: 25px;
+    background: #2a2e32;
+}
+
+.dilivar {
+    background-color: #707175;
+    height: 1px;
+    width: 100%;
+}
+
+.list {
+    list-style-type: none;
+}

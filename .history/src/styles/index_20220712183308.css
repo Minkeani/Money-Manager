@@ -1,0 +1,72 @@
+:root {
+	--color-white: #fff;
+	--color-black: #000;
+	--color-dark-gray: #10100e;
+	--color-yellow: #ffff00;
+	--color-blue: #6a84fb;
+	--color-red: #f75d83;
+	--font-bold: 600;
+	--color-violet: #ae72c2;
+	--text-shadow-yellow:
+		0 0 2px var(--color-white),
+		0 0 40px var(--color-blue);
+
+	--spacing-medium: 20px;
+
+	--spacing-small: 10px;
+
+	--spacing-ultra-small: 5px;
+
+	--spacing-large: 30px;
+
+	--font-family-main: sans-serif;
+
+	--border-radius-small: 3px;
+
+	--border-radius-medium: 5px;
+
+	--margin-list: 7px;
+
+	--font-size-main: 16px;
+
+	--font-size-header: 26px;
+
+	--font-size-subheader: 18px;
+
+	/* Theme */
+	--theme-light-header: #dfe2df;
+
+	--theme-dark-header: #ca6ca6;
+
+	--theme-neitral-header: #cccc46;
+
+	--theme-default-header: var(--theme-neitral-header);
+
+	--transition: .4s;
+
+	--theme-light-bg-img: linear-gradient(to top, #b7b7b7, #a396b0, #9a72a0, #984986, #960062);
+
+	--theme-dark-bg-img:  linear-gradient(to top, #6a2b60, #532143, #3b192b, #221118, #000000);
+
+	--theme-neitral-bg-img: url(../../src/static/bg.jpg);
+
+	--theme-default-bg-img: var(--theme-neitral-bg-img);
+
+	--width-max: 1200px
+
+}
+body {
+  margin: 0;
+	padding: 0;
+	background-color: var(--color-theme);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

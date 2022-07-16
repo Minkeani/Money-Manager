@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    overflow-y: auto;
+    border-radius: 1.5625rem;
+    width: 35%;
+    padding: 25px;
+    margin: 25px;
+    background: rgba(50, 50, 50, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px 0px #8e4a8e;
+    color: white;
+}
+
+.title {
+    color: #fff;
+    font-size: 1.5625rem;
+}
+
+.dilivar {
+    background-color: #707175;
+    height: 1px;
+    width: 100%;
+}
+
+.money {
+    color: #21bf73;
+    font-style: italic;
+    text-shadow: 0 0 20px #21bf73;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
