@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    overflow-y: auto;
+    border-radius: 1.5625rem;
+    width: 85%;
+    padding: 25px;
+    margin: 25px;
+    background: rgba(50, 50, 50, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px 0px #8e4a8e;
+    color: white;
+}
+
+.container button {
+    font-size: 1.25rem;
+    background: transparent;
+    border: none;
+    margin: 5px 5px 5px 0px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container button:hover {
+    text-shadow: 0 0 20px  #ff00fa;
+    color: #ff00fa
+}
+
+.title {
+    color: #fff;
+    font-size: 1.5625rem;
+}
+
+.dilivar {
+    background-color: #707175;
+    height: 1px;
+    width: 100%;
+}
+
+.money {
+    color: #21bf73;
+    text-shadow: 0 0 20px #21bf73;
+}
+
+.Remoney {
+    color: red;
+    text-shadow: 0 0 20px red;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.listCont {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}

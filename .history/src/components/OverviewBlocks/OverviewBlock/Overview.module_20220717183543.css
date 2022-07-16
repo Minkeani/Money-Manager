@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    overflow-y: auto;
+    border-radius: 1.5625rem;
+    width: 85%;
+    padding: 25px;
+    margin: 25px;
+    background: rgba(50, 50, 50, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px 0px #8e4a8e;
+    color: white;
+}
+
+.headerCont {
+    lign-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    align-items: center;
+    background-color: #21bf73;
+    border-radius: 0.625rem;
+    box-shadow: 0 5px 25px 3pxrgba(33,191,115,.25);
+    color: #fff;
+    display: flex;
+    font-size: 3.125rem;
+    height: 2.5rem;
+    justify-content: center;
+    width: 2.5rem;
+}
+
+.title {
+    color: #fff;
+    font-size: 1.5625rem;
+    flex: 1 0 60%;
+    margin-right: 0.9375rem;
+}
+
+.dilivar {
+    background-color: #707175;
+    height: 1px;
+    width: 100%;
+}
+
+.money {
+    color: #21bf73;
+    text-shadow: 0 0 20px #21bf73;
+}
+
+.Remoney {
+    color: red;
+    text-shadow: 0 0 20px red;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
