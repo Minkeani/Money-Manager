@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.title {
+    font-size: 2rem;
+    color: #21bf73;
+    text-shadow: 0 0 20px #21bf73;
+}
+
+.input {
+    font-size: 1.5rem;
+}
+
+.btn {
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    margin: 5px;
+}

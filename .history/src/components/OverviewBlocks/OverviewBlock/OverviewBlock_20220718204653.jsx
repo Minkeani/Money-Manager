@@ -1,16 +1,10 @@
 import React, {useState} from 'react';
 import styles from './Overview.module.css'
-import Modal from '../../Modal/Modal';
+import {data} from '../../Overview/Overview'
 
-const OverviewBlock = ({data}) => {
+const OverviewBlock = () => {
 
     const [modalActive, setModalActive] = useState(false);
-    const [type, setType] = useState('');
-
-    function typeOfModal(type) {
-        setModalActive(true)
-        setType(type)
-    }
 
     
     return (
@@ -18,11 +12,7 @@ const OverviewBlock = ({data}) => {
             {data.map(({type, sign, classes, datasets, labels}) => (
                     <div className={styles.container}>
                             <h3 className={styles.title}>Last <span className={classes === 'money' ? styles.money : styles.Remoney}>{type}</span></h3>
-                            <button
-                                 onClick={() => typeOfModal('Add')}
-                                 className={classes === 'money' ? styles.money : styles.Remoney}>
-                                    Добавить
-                            </button>
+                            <button className={classes === 'money' ? styles.money : styles.Remoney}>Добавить</button>
                             
                         <div className={styles.dilivar}></div>
                             <ul className={styles.list}>
@@ -34,14 +24,14 @@ const OverviewBlock = ({data}) => {
                             </ul>
                             <div className={styles.All}>
                                 <button
-                                    onClick={() => typeOfModal('View')}
+                                    onClick={() => setModalActive(true)}
                                     className={classes === 'money' ? styles.money : styles.Remoney}>View all {type}
                                 </button>
                             </div>
                         </div>
             )
             )}
-            <Modal active={modalActive} setActive={setModalActive} type={type}>
+            <Modal active={modalActive} setActive={setModalActive}>
                 children={"1"}
             </Modal>
       

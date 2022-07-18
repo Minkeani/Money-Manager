@@ -1,28 +1,24 @@
 import React, {useState} from 'react';
 import styles from './Overview.module.css'
-import Modal from '../../Modal/Modal';
+import {data} from '../../Overview/Overview'
 
-const OverviewBlock = ({data}) => {
-
-    const [modalActive, setModalActive] = useState(false);
-    const [type, setType] = useState('');
-
-    function typeOfModal(type) {
-        setModalActive(true)
-        setType(type)
-    }
+const OverviewBlock = () => {
+    const [blocks, setBlocks] = useState([
+        {type: 'Incomes', sign: '+', classes: 'money', array:  [{money: 1000, category: 'life'}, {money: 1000, category: 'life'}, {money: 1000, category: 'life'}]},
+        {type: 'Expenses', sign: '-', classes: 'Remoney', array:  [{money: 1000, category: 'life'}, {money: 1000, category: 'life'}, {money: 1000, category: 'life'}]}
+])
+data.map((item) => {
+    // console.log(item.datasets[0].data);
+    console.log(item.labels[1]);
 
     
+})
     return (
         <>
             {data.map(({type, sign, classes, datasets, labels}) => (
                     <div className={styles.container}>
                             <h3 className={styles.title}>Last <span className={classes === 'money' ? styles.money : styles.Remoney}>{type}</span></h3>
-                            <button
-                                 onClick={() => typeOfModal('Add')}
-                                 className={classes === 'money' ? styles.money : styles.Remoney}>
-                                    Добавить
-                            </button>
+                            <button className={classes === 'money' ? styles.money : styles.Remoney}>Добавить</button>
                             
                         <div className={styles.dilivar}></div>
                             <ul className={styles.list}>
@@ -32,18 +28,10 @@ const OverviewBlock = ({data}) => {
                                         ))
                                     ))} 
                             </ul>
-                            <div className={styles.All}>
-                                <button
-                                    onClick={() => typeOfModal('View')}
-                                    className={classes === 'money' ? styles.money : styles.Remoney}>View all {type}
-                                </button>
-                            </div>
+                            <div className={styles.All}><button className={classes === 'money' ? styles.money : styles.Remoney}>View all {type}</button></div>
                         </div>
             )
             )}
-            <Modal active={modalActive} setActive={setModalActive} type={type}>
-                children={"1"}
-            </Modal>
       
         </>
     );
