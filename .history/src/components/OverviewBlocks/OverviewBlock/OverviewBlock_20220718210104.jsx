@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import styles from './Overview.module.css'
+import {data} from '../../Overview/Overview'
 import Modal from '../../Modal/Modal';
 
-const OverviewBlock = ({data}) => {
+const OverviewBlock = () => {
 
     const [modalActive, setModalActive] = useState(false);
     const [type, setType] = useState('');
@@ -41,7 +42,7 @@ const OverviewBlock = ({data}) => {
                         </div>
             )
             )}
-            <Modal active={modalActive} setActive={setModalActive} type={type}>
+            <Modal active={modalActive} setActive={setModalActive}>
                 children={"1"}
             </Modal>
       

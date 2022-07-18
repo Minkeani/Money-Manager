@@ -2,11 +2,13 @@ import React, {useEffect} from 'react'
 import styles from '../OverviewBlock/Overview.module.css'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
+import {data} from '../../Overview/Overview'
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 
-export default function Charts({data}) {
+export default function Charts() {
+console.log(data);
 
 
   return (
