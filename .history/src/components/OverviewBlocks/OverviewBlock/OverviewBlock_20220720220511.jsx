@@ -47,7 +47,7 @@ const OverviewBlock = ({data}) => {
                         </div>
             )
             )}
-            <Modal active={modalActive} data={data} setActive={setModalActive} type={type} typeData={typeData}>
+            <Modal active={modalActive} data={data} setActive={setModalActive} type={type}>
                 children={"1"}
             </Modal>
       

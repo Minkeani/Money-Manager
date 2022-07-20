@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import OverviewBlock from '../OverviewBlocks/OverviewBlock/OverviewBlock'
 import styles from './Overview.module.css'
 import Charts from '../OverviewBlocks/OverviewCharts/Charts'
-import { render } from '@testing-library/react'
 
 export default function Overview() {
 

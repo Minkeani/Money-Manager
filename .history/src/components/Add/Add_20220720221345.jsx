@@ -25,6 +25,7 @@ export default function Add({setActive, data, typeData}) {
     setSum('')
     setCategory('')
 
+    useEffect(() => {
      if(sumData.length !== 0 && cateData.length !== 0 && typeData === 'Incomes') {
       data[0].labels.push(cateData)
       data[0].datasets[0].data.push(sumData)
@@ -32,6 +33,7 @@ export default function Add({setActive, data, typeData}) {
       data[1].labels.push(cateData)
       data[1].datasets[0].data.push(sumData)
     }
+    }, []);
   }
 
 

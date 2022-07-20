@@ -11,6 +11,7 @@
     backdrop-filter: blur(10px);
     box-shadow: 0 0 5px 0px #8e4a8e;
     color: white;
+    z-index: -1;
 }
 
 .container button {

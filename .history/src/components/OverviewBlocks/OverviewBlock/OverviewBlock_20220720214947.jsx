@@ -5,27 +5,22 @@ import Modal from '../../Modal/Modal';
 const OverviewBlock = ({data}) => {
 
     const [modalActive, setModalActive] = useState(false);
+    const [typeData, setTypeData] = useState(data.type)
     const [type, setType] = useState('');
-    const [typeData, setTypeData] = useState('')
 
     function typeOfModal(type) {
         setModalActive(true)
         setType(type)
     }
 
-    function Add(type) {
-        typeOfModal('Add')
-        setTypeData(type)
-    }
-
-
+    console.log(typeData);
     return (
         <>
             {data.map(({type, sign, classes, datasets, labels}) => (
                     <div className={styles.container}>
                             <h3 className={styles.title}>Last <span className={classes === 'money' ? styles.money : styles.Remoney}>{type}</span></h3>
                             <button
-                                 onClick={() => Add(type)}
+                                 onClick={() => typeOfModal('Add')}
                                  className={classes === 'money' ? styles.money : styles.Remoney}>
                                     Добавить
                             </button>
@@ -47,7 +42,7 @@ const OverviewBlock = ({data}) => {
                         </div>
             )
             )}
-            <Modal active={modalActive} data={data} setActive={setModalActive} type={type} typeData={typeData}>
+            <Modal active={modalActive} data={data} setActive={setModalActive} type={type}>
                 children={"1"}
             </Modal>
       
