@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import OverviewBlock from '../OverviewBlocks/OverviewBlock/OverviewBlock'
 import styles from './Overview.module.css'
 import Charts from '../OverviewBlocks/OverviewCharts/Charts'
-import { render } from '@testing-library/react'
 
 export default function Overview() {
 
@@ -67,11 +66,14 @@ const [data, setData] = useState([ {
   ],
 }
 ])
+data[0].labels.push('1')
+data[0].datasets[0].data.push('1')
+console.log(data[0].labels);
 
-console.log(data);
+
   return (
     <div className={styles.container}>
-      <OverviewBlock data={data}/>
+      <OverviewBlock data={data}cc/>
       <Charts data={data}/>
     </div>
   )

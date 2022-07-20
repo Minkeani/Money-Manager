@@ -24,8 +24,3 @@
     border: none;
     margin: 5px;
 }
-
-.btn:hover { 
-    text-shadow: 0 0 20px  #ff00fa;
-    color: #ff00fa
-}

@@ -13,19 +13,18 @@ const OverviewBlock = ({data}) => {
         setType(type)
     }
 
-    function Add(type) {
+    function Add(item) {
         typeOfModal('Add')
-        setTypeData(type)
+        // console.log(item);
     }
-
 
     return (
         <>
-            {data.map(({type, sign, classes, datasets, labels}) => (
+            {data.map((item, {type, sign, classes, datasets, labels}) => (
                     <div className={styles.container}>
                             <h3 className={styles.title}>Last <span className={classes === 'money' ? styles.money : styles.Remoney}>{type}</span></h3>
                             <button
-                                 onClick={() => Add(type)}
+                                 onClick={() => Add}
                                  className={classes === 'money' ? styles.money : styles.Remoney}>
                                     Добавить
                             </button>
@@ -47,7 +46,7 @@ const OverviewBlock = ({data}) => {
                         </div>
             )
             )}
-            <Modal active={modalActive} data={data} setActive={setModalActive} type={type} typeData={typeData}>
+            <Modal active={modalActive} data={data} setActive={setModalActive} type={type}>
                 children={"1"}
             </Modal>
       

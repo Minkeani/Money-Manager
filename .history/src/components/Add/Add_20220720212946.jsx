@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import styles from './Add.module.css'
 
-export default function Add({setActive, data, typeData}) {
+export default function Add({setActive, data}) {
   const [sum, setSum] = useState('')
   const [category, setCategory] = useState('')
 
@@ -24,17 +24,9 @@ export default function Add({setActive, data, typeData}) {
     setActive(false)
     setSum('')
     setCategory('')
-
-     if(sumData.length !== 0 && cateData.length !== 0 && typeData === 'Incomes') {
-      data[0].labels.push(cateData)
-      data[0].datasets[0].data.push(sumData)
-    } else if(sumData.length !== 0 && cateData.length !== 0 && typeData === 'Expenses') {
-      data[1].labels.push(cateData)
-      data[1].datasets[0].data.push(sumData)
-    }
   }
 
-
+  console.log(data);
   
 
   return (

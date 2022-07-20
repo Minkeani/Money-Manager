@@ -69,7 +69,7 @@ const [data, setData] = useState([ {
 ])
 
 console.log(data);
-  return (
+  return render(
     <div className={styles.container}>
       <OverviewBlock data={data}/>
       <Charts data={data}/>

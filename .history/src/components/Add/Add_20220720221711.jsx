@@ -18,7 +18,8 @@ export default function Add({setActive, data, typeData}) {
     setCategory(e.target.value)
   }
 
-  function AddData() {
+  useEffect(() => {
+    function AddData() {
     setSumData(sum)
     setCateData(category)
     setActive(false)
@@ -33,6 +34,9 @@ export default function Add({setActive, data, typeData}) {
       data[1].datasets[0].data.push(sumData)
     }
   }
+  }, []);
+
+  
 
 
   

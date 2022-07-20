@@ -11,7 +11,7 @@
     opacity: 0;
     pointer-events: none;
     transition: 0.5s;
-    z-index: 1000;
+    overflow: none;
   }
   
   .modal.active {
@@ -34,6 +34,7 @@
     border-radius: 12px;
     width: 400px;
     height: 400px;
+    z-index: 1000;
     transform: scale(0.5);
     transition: 0.4s all;
   }

@@ -3,7 +3,7 @@ import  './Modal.css'
 import Add from '../Add/Add';
 import View from '../View/View';
 
-const Modal = function ({data, active, setActive, children, type, typeData}) {
+const Modal = function ({data, active, setActive, children, type}) {
 
 
     return (
@@ -16,7 +16,7 @@ const Modal = function ({data, active, setActive, children, type, typeData}) {
           onClick={(e) => e.stopPropagation()}
         >
         {type === 'Add'
-             ?  <Add data={data} setActive={setActive} typeData={typeData}/>
+             ?  <Add data={data} setActive={setActive}/>
              : <View/>
         }
         

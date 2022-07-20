@@ -18,7 +18,6 @@ const OverviewBlock = ({data}) => {
         setTypeData(type)
     }
 
-
     return (
         <>
             {data.map(({type, sign, classes, datasets, labels}) => (
@@ -47,7 +46,7 @@ const OverviewBlock = ({data}) => {
                         </div>
             )
             )}
-            <Modal active={modalActive} data={data} setActive={setModalActive} type={type} typeData={typeData}>
+            <Modal active={modalActive} data={data} setActive={setModalActive} type={type}>
                 children={"1"}
             </Modal>
       
