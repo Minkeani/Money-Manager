@@ -68,7 +68,8 @@ const [data, setData] = useState([ {
 
 
 
-  return (
+console.log(data);
+  return memo(
     <div className={styles.container}>
          <OverviewBlock data={data}/>
           <Charts data={data}/>

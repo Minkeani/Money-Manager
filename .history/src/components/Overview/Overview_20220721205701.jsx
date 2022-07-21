@@ -4,7 +4,7 @@ import styles from './Overview.module.css'
 import Charts from '../OverviewBlocks/OverviewCharts/Charts'
 export default function Overview() {
 
-const [data, setData] = useState([ {
+const memo([data, setData] = useState([ {
   labels: ['Life', 'Food', 'Oil'],
   type: 'Incomes',
   Analitic: 'Income',
@@ -64,7 +64,7 @@ const [data, setData] = useState([ {
     },
   ],
 }
-])
+]))
 
 
 

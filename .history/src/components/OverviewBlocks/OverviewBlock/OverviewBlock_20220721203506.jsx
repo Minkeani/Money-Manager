@@ -18,10 +18,10 @@ const OverviewBlock = ({data}) => {
         setTypeData(type)
     }
 
-    function CorrectData() {
-        // labels[data.indexOf(money)]
-    //   return  data[0].datasets[0].data[data[0].labels.indexOf(labels[data.indexOf(money)])]
-    }
+    // function CorrectData() {
+    //     labels[data.indexOf(money)]
+    // //   return  data[0].datasets[0].data[data[0].labels.indexOf(labels[data.indexOf(money)])]
+    // }
 
     console.log();
 

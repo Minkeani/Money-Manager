@@ -19,7 +19,7 @@ const OverviewBlock = ({data}) => {
     }
 
     function CorrectData() {
-        // labels[data.indexOf(money)]
+        labels[data.indexOf(money)]
     //   return  data[0].datasets[0].data[data[0].labels.indexOf(labels[data.indexOf(money)])]
     }
 
@@ -40,7 +40,7 @@ const OverviewBlock = ({data}) => {
                             <ul className={styles.list}>
                                     {datasets.map(({data}) => (
                                         data.map((money) => (
-                                        <li><div className={styles.listCont}> Amount<span className={classes === 'money' ? styles.money : styles.Remoney}>{sign}{money}</span> Category <span>{labels[data.indexOf(money)]}</span></div></li>
+                                        <li><div className={styles.listCont}> Amount<span className={classes === 'money' ? styles.money : styles.Remoney}>{sign}{money}</span> Category <span>{CorrectData}</span></div></li>
                                         ))
                                     ))} 
                             </ul>

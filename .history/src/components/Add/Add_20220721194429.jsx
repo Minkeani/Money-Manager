@@ -32,9 +32,11 @@ export default function Add({setActive, data, typeData}) {
       data[1].labels.push(cateData)
       data[1].datasets[0].data.push(sumData)
     }
+    return data
   }
 
 
+  
 
   return (
     <div className={styles.container}>
