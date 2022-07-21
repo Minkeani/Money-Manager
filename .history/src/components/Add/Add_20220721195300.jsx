@@ -30,11 +30,12 @@ export default function Add({setActive, data, typeData}) {
       data[0].datasets[0].data.push(sumData)
     } else if(sumData.length !== 0 && cateData.length !== 0 && typeData === 'Expenses') {
       data[1].labels.push(cateData)
-      data[1].datasets[0].data.push(sumData)
+      data[1].datasets[0].data.push(parseInt(sumData))
     }
   }
 
 
+  
 
   return (
     <div className={styles.container}>

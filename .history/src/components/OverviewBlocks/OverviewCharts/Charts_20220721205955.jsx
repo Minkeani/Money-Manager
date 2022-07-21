@@ -6,7 +6,7 @@ import { Doughnut } from 'react-chartjs-2';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 
-export default function Charts({data}) {
+export default Charts = memo(({data}) => {
 
 
   return (
@@ -21,4 +21,4 @@ export default function Charts({data}) {
         
     </>
   )
-}
+})

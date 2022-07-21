@@ -1,7 +1,8 @@
-import React, {useState, memo} from 'react'
+import React, {useState} from 'react'
 import OverviewBlock from '../OverviewBlocks/OverviewBlock/OverviewBlock'
 import styles from './Overview.module.css'
 import Charts from '../OverviewBlocks/OverviewCharts/Charts'
+
 export default function Overview() {
 
 const [data, setData] = useState([ {
@@ -68,6 +69,7 @@ const [data, setData] = useState([ {
 
 
 
+console.log(data);
   return (
     <div className={styles.container}>
          <OverviewBlock data={data}/>

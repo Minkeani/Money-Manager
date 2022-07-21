@@ -35,6 +35,7 @@ export default function Add({setActive, data, typeData}) {
   }
 
 
+  
 
   return (
     <div className={styles.container}>

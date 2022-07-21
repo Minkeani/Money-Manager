@@ -71,7 +71,7 @@ const [data, setData] = useState([ {
   return (
     <div className={styles.container}>
          <OverviewBlock data={data}/>
-          <Charts data={data}/>
+          <Charts data={data}/>}
       
     </div>
   )
